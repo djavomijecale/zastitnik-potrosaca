@@ -1,4 +1,4 @@
 header{
-   .navbar-light .navbar-nav .nav-link{font-size: 1.2rem !important;}
+   .navbar-light .navbar-nav .nav-link{font-size: 1.2rem !important;color: $primary;font-family: $font-proximaNova-regular; &.active{border-bottom: 3px solid $danger} }
    .btn-danger{font-size:0.7rem; }
 }
