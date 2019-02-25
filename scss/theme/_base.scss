@@ -5,6 +5,7 @@ html{
 
 img{
     max-width: 100%;
+    border-radius: 3px;
 }
 body{
     font-family: $font-ubuntu;
@@ -14,6 +15,7 @@ body{
 
 
 .img-holder{
+    border-radius: 3px;
     position: relative;
     background: #ccc url('assets/logo-small.png') no-repeat center center;
     background-size: 80px auto;
