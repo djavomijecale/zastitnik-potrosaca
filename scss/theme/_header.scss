@@ -1,16 +1,28 @@
 header{height:100px;
-       .navbar{border-bottom: 1px solid #EBEBEB;}
-       .navbar-light .navbar-nav .nav-link{font-size: 1.2rem !important;
-                                           padding-left: 32px;
-                                           color: $primary;
-                                           font-family: $font-proximaNova-regular;
-                                           &.active:after{
-                                               content: '';
-                                               display: block;
-                                               margin: 0 auto;
-                                               width: 80%;
-                                               border-bottom: 3px solid $danger;
-                                               padding-top: 20px;} }
+       .navbar{border-bottom: 1px solid #EBEBEB;  
+               .navbar-brand{
+                   max-width: 40%;
+               }   
+               .navbar-nav {
+                   .nav-link{font-size: 1.2rem !important;
+                              padding: 10px;
+                              position: relative;
+                              color: $primary;
+                              font-family: $font-proximaNova-regular;
+                              &.active:after,&:hover:after{
+                                  content: '';
+                                  display: block;
+                                  margin: 0 auto;
+                                  width: 70%;
+                                  border-bottom: 3px solid $danger;
+                                  padding-top: 20px;
+                                  position: absolute;
+                                  bottom: -3px;
+                                  left: 15%;} }}
        .btn-danger{font-size:0.7rem; }
-       .navbar-brand{max-width: 272px !important;}
+
+       }
+
+
+    
 }

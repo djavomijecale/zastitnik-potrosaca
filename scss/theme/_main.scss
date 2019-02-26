@@ -1,13 +1,57 @@
 main{margin-top: 100px;
      background:  radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
-     .news-aside{box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);background-color: #FFFFFF;h2{padding-left:10px;&:after{
-                                               content: '';
-                                               display: block;
-                                               margin-left:  0px ;
-                                               width: 15%;
-                                               border-bottom: 3px solid $danger;
-                                               padding-top: 10px;} }
-     p{padding-top: 10px}} 
-     
-}
+     .news-aside{box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                 background-color: #FFFFFF;
+                 h2{padding-left:10px;&:after{
+                        content: '';
+                        display: block;
+                        margin-left:  0px ;
+                        width: 15%;
+                        border-bottom: 3px solid $danger;
+                        padding-top: 10px;} }
+                 p{padding-top: 10px}} 
+                 .comments{
+                     .comment-detail{position: relative;
+                                     background-color: #FFFFFF;
+                                     border-radius: 3px;
+                                     box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                     &:after{position: absolute;
+                                             width: 20px;
+                                             height: 20px;
+                                             border:2px solid #fff;
+                                             content: '';
+                                             top:100%;
+                                             left:80%;
+                                             transform: rotate(45deg);
+                                             margin-top:-10px;
+                                             background-color: #FFFFFF; }
+                                     h5{padding-left:40px;
+                                        padding-top: 10px;
+                                        font-size:1.14rem;
+                                        color:$primary;
+                                        font-family:$font-proximaNova-bold;
+                                        font-weight: 600;
+                                        &:before {content:' ” ';
+                                                  color: #93DC32;
+                                                  font-size: 50px;
+                                                  position: absolute;
+                                                  left: 5px;
+                                                  top: 1px;
+                                                  font-family:$font-addele-bold;}
+                                     }
+                                     p{padding-left: 7px;
+                                       padding-right: 7px;
+                                       font-family: $font-proximaNova-regular;
+                                       font-size: 0.8rem;
+                                     }}
+
+                 }
+                 .new-news{
+                     .show-more{font-family: $font-proximaNova-bold;
+                                font-weight: 600;
+                                font-size: 1.14rem;
+                               }
+                 }
+
+     }
 
