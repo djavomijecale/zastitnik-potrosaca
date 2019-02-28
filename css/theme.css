@@ -383,9 +383,90 @@ main {
       padding-right: 7px;
       font-family: "ProximaNova-Regular", sens-serif;
       font-size: 0.8rem; }
+  main .new-news h2 {
+    font-size: 2.64rem;
+    position: relative;
+    font-family: "Adelle-Bold", sans-serif;
+    font-weight: 600; }
+    main .new-news h2:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 30%;
+      border-bottom: 3px solid #E2322B;
+      padding-top: 20px;
+      position: absolute;
+      bottom: -20px;
+      left: 0%; }
   main .new-news .show-more {
     font-family: "ProximaNova-Bold", sans-serif;
     font-weight: 600;
-    font-size: 1.14rem; }
+    font-size: 1.14rem;
+    color: #E2322B; }
+  main .new-news .new-news-item {
+    box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31);
+    border-radius: 8px;
+    background-color: #FFFFFF; }
+    main .new-news .new-news-item h3 {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 1.42rem;
+      color: #363739; }
+    main .new-news .new-news-item .new-news-bottom {
+      border-top: 1px solid #EBEBEB; }
+      main .new-news .new-news-item .new-news-bottom .new-news-author {
+        font-size: 0.8rem;
+        color: #363739; }
+      main .new-news .new-news-item .new-news-bottom .new-news-comment {
+        color: #AFAFAF;
+        font-size: 0.8rem; }
+        main .new-news .new-news-item .new-news-bottom .new-news-comment span {
+          color: #E2322B; }
+  main .sign-in {
+    background-color: #EAEAEA;
+    box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+    main .sign-in span {
+      font-size: 4.14rem;
+      color: #E2322B;
+      border: 20px solid #FFFFFF;
+      border-radius: 50%; }
+    main .sign-in h3 {
+      font-size: 1.92rem;
+      font-family: "Adelle-Bold", sans-serif;
+      font-weight: 600; }
+    main .sign-in button {
+      font-size: 1.1rem;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 600;
+      color: #FFFFFF;
+      border-radius: 3px;
+      box-shadow: none !important;
+      border: none !important; }
+  main footer {
+    background-color: #363739; }
+    main footer .footer-menu {
+      column-count: 2; }
+    main footer li {
+      color: #FFFFFF;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 600; }
+    main footer .fa-facebook-square {
+      text-decoration: none;
+      color: #44539F;
+      font-size: 2.1rem; }
+    main footer .fa-twitter-square {
+      text-decoration: none;
+      color: #31A1E2;
+      font-size: 2.1rem; }
+    main footer .fa-linkedin-square {
+      text-decoration: none;
+      color: #1A659A;
+      font-size: 2.1rem; }
+    main footer .fa-google-plus-square {
+      text-decoration: none;
+      color: #E1443B;
+      font-size: 2.1rem; }
+    main footer p {
+      color: #fff;
+      font-family: "ProximaNova-Regular", sens-serif; }
 
 /*# sourceMappingURL=theme.css.map */

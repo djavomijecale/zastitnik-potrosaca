@@ -47,11 +47,94 @@ main{margin-top: 100px;
 
                  }
                  .new-news{
+                     h2{font-size:2.64rem;
+                        position: relative;
+                        font-family:$font-addele-bold;
+                        font-weight:600; &:after{
+                            content: '';
+                            display: block;
+                            margin: 0 auto;
+                            width: 30%;
+                            border-bottom: 3px solid $danger;
+                            padding-top: 20px;
+                            position: absolute;
+                            bottom: -20px;
+                            left: 0%;
+                        }   }
                      .show-more{font-family: $font-proximaNova-bold;
                                 font-weight: 600;
                                 font-size: 1.14rem;
-                               }
-                 }
+                                color: $danger;
+                     }
+                     .new-news-item{
+                         h3{
+                             font-family: $font-ubuntu;
+                             font-size: 1.42rem;
+                             color: $primary;
+                         }
+                         box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                         border-radius: 8px;
+                         background-color: #FFFFFF;
+                         .new-news-bottom{border-top: 1px solid #EBEBEB;
+                                          .new-news-author{
+                                              font-size: 0.8rem;
+                                              color: #363739;
+                                          }
+                                          .new-news-comment{color: #AFAFAF;
+                                                            font-size: 0.8rem;
+                                                            span{color: $danger;}}}
+                                          }}
 
-     }
+                         .sign-in{
+                             span{font-size: 4.14rem;
+                                  color: $danger; 
+                                  border:20px solid #FFFFFF;
+                                  border-radius:50%;}
+
+                             background-color: #EAEAEA;
+                             box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                             h3{font-size: 1.92rem;
+                                font-family: $font-addele-bold;
+                                font-weight: 600;
+
+                             }
+                             button{font-size:1.1rem;
+                                    font-family: $font-proximaNova-bold;
+                                    font-weight: 600;
+                                    color:#FFFFFF;
+                             	border-radius: 3px;
+                             box-shadow: none !important;
+                             border: none !important;}}
+                         footer{
+                             .footer-menu{
+                                 column-count: 2;
+                             }
+                             background-color: #363739;
+                             li{
+                                 color: #FFFFFF;
+                                 font-family: $font-proximaNova-bold;
+                                 font-weight: 600;
+                             }
+                             .fa-facebook-square{
+                                 
+                                 text-decoration: none;
+                                 color: #44539F;
+                                 font-size: 2.1rem;}
+                             .fa-twitter-square{
+                                 text-decoration: none;
+                                 color: #31A1E2;
+                                 font-size: 2.1rem;
+                             }
+                             .fa-linkedin-square{
+                                 text-decoration: none;
+                                 color: #1A659A;
+                                 font-size: 2.1rem;}
+                             .fa-google-plus-square{
+                                 text-decoration: none;
+                                 color: #E1443B;
+                                 font-size: 2.1rem;}
+                             p{
+                                 color: #fff;
+                                 font-family: $font-proximaNova-regular;
+                             }}}
 
