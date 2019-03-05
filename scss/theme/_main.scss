@@ -1,5 +1,6 @@
 main{margin-top: 100px;
      background:  radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
+     .main-news{.news-detail{h2{max-height: 92px}}}
      .news-aside{box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
                  background-color: #FFFFFF;
                  h2{padding-left:10px;&:after{
@@ -71,25 +72,30 @@ main{margin-top: 100px;
                              font-family: $font-ubuntu;
                              font-size: 1.42rem;
                              color: $primary;
+                             
                          }
                          box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
                          border-radius: 8px;
                          background-color: #FFFFFF;
                          .new-news-bottom{border-top: 1px solid #EBEBEB;
+                                          height:46px;
+                                          
                                           .new-news-author{
                                               font-size: 0.8rem;
                                               color: #363739;
+                                              
                                           }
                                           .new-news-comment{color: #AFAFAF;
                                                             font-size: 0.8rem;
                                                             span{color: $danger;}}}
-                                          }}
+                                                            .comment-in-pic{
+                                                                position: absolute;
+                                                                bottom: -10px;
+                                                                .comment{margin-right: auto}
+                                                            }}}
 
                          .sign-in{
-                             span{font-size: 4.14rem;
-                                  color: $danger; 
-                                  border:20px solid #FFFFFF;
-                                  border-radius:50%;}
+                            
 
                              background-color: #EAEAEA;
                              box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
@@ -105,36 +111,5 @@ main{margin-top: 100px;
                              	border-radius: 3px;
                              box-shadow: none !important;
                              border: none !important;}}
-                         footer{
-                             .footer-menu{
-                                 column-count: 2;
-                             }
-                             background-color: #363739;
-                             li{
-                                 color: #FFFFFF;
-                                 font-family: $font-proximaNova-bold;
-                                 font-weight: 600;
-                             }
-                             .fa-facebook-square{
-                                 
-                                 text-decoration: none;
-                                 color: #44539F;
-                                 font-size: 2.1rem;}
-                             .fa-twitter-square{
-                                 text-decoration: none;
-                                 color: #31A1E2;
-                                 font-size: 2.1rem;
-                             }
-                             .fa-linkedin-square{
-                                 text-decoration: none;
-                                 color: #1A659A;
-                                 font-size: 2.1rem;}
-                             .fa-google-plus-square{
-                                 text-decoration: none;
-                                 color: #E1443B;
-                                 font-size: 2.1rem;}
-                             p{
-                                 color: #fff;
-                                 font-family: $font-proximaNova-regular;
-                             }}}
+                        }
 

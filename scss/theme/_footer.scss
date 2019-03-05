@@ -1,2 +1,32 @@
-
-
+ footer{
+                             .footer-menu{
+                                 column-count: 2;
+                             }
+                             background-color: #363739;
+                             li{
+                                 color: #FFFFFF;
+                                 font-family: $font-proximaNova-bold;
+                                 font-weight: 600;
+                             }
+                             .fa-facebook-square{
+                                 
+                                 text-decoration: none;
+                                 color: #44539F;
+                                 font-size: 2.1rem;}
+                             .fa-twitter-square{
+                                 text-decoration: none;
+                                 color: #31A1E2;
+                                 font-size: 2.1rem;
+                             }
+                             .fa-linkedin-square{
+                                 text-decoration: none;
+                                 color: #1A659A;
+                                 font-size: 2.1rem;}
+                             .fa-google-plus-square{
+                                 text-decoration: none;
+                                 color: #E1443B;
+                                 font-size: 2.1rem;}
+                             p{
+                                 color: #fff;
+                                 font-family: $font-proximaNova-regular;
+                             }}

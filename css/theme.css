@@ -50,7 +50,11 @@ body {
   .img-holder.size-4by3:after {
     padding-top: 75%; }
   .img-holder.size-16by9:after {
-    padding-top: 56.25%; }
+    padding-top: 58.96%; }
+  .img-holder.size-16by99:after {
+    padding-top: 59.00%; }
+  .img-holder.size-2515:after {
+    padding-top: 25.15%; }
   .img-holder img {
     display: block;
     position: absolute;
@@ -333,6 +337,8 @@ header {
 main {
   margin-top: 100px;
   background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%); }
+  main .main-news .news-detail h2 {
+    max-height: 92px; }
   main .news-aside {
     box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31);
     background-color: #FFFFFF; }
@@ -412,7 +418,8 @@ main {
       font-size: 1.42rem;
       color: #363739; }
     main .new-news .new-news-item .new-news-bottom {
-      border-top: 1px solid #EBEBEB; }
+      border-top: 1px solid #EBEBEB;
+      height: 46px; }
       main .new-news .new-news-item .new-news-bottom .new-news-author {
         font-size: 0.8rem;
         color: #363739; }
@@ -421,14 +428,14 @@ main {
         font-size: 0.8rem; }
         main .new-news .new-news-item .new-news-bottom .new-news-comment span {
           color: #E2322B; }
+    main .new-news .new-news-item .comment-in-pic {
+      position: absolute;
+      bottom: -10px; }
+      main .new-news .new-news-item .comment-in-pic .comment {
+        margin-right: auto; }
   main .sign-in {
     background-color: #EAEAEA;
     box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
-    main .sign-in span {
-      font-size: 4.14rem;
-      color: #E2322B;
-      border: 20px solid #FFFFFF;
-      border-radius: 50%; }
     main .sign-in h3 {
       font-size: 1.92rem;
       font-family: "Adelle-Bold", sans-serif;
@@ -441,32 +448,33 @@ main {
       border-radius: 3px;
       box-shadow: none !important;
       border: none !important; }
-  main footer {
-    background-color: #363739; }
-    main footer .footer-menu {
-      column-count: 2; }
-    main footer li {
-      color: #FFFFFF;
-      font-family: "ProximaNova-Bold", sans-serif;
-      font-weight: 600; }
-    main footer .fa-facebook-square {
-      text-decoration: none;
-      color: #44539F;
-      font-size: 2.1rem; }
-    main footer .fa-twitter-square {
-      text-decoration: none;
-      color: #31A1E2;
-      font-size: 2.1rem; }
-    main footer .fa-linkedin-square {
-      text-decoration: none;
-      color: #1A659A;
-      font-size: 2.1rem; }
-    main footer .fa-google-plus-square {
-      text-decoration: none;
-      color: #E1443B;
-      font-size: 2.1rem; }
-    main footer p {
-      color: #fff;
-      font-family: "ProximaNova-Regular", sens-serif; }
+
+footer {
+  background-color: #363739; }
+  footer .footer-menu {
+    column-count: 2; }
+  footer li {
+    color: #FFFFFF;
+    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 600; }
+  footer .fa-facebook-square {
+    text-decoration: none;
+    color: #44539F;
+    font-size: 2.1rem; }
+  footer .fa-twitter-square {
+    text-decoration: none;
+    color: #31A1E2;
+    font-size: 2.1rem; }
+  footer .fa-linkedin-square {
+    text-decoration: none;
+    color: #1A659A;
+    font-size: 2.1rem; }
+  footer .fa-google-plus-square {
+    text-decoration: none;
+    color: #E1443B;
+    font-size: 2.1rem; }
+  footer p {
+    color: #fff;
+    font-family: "ProximaNova-Regular", sens-serif; }
 
 /*# sourceMappingURL=theme.css.map */
