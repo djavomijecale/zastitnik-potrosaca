@@ -340,6 +340,86 @@ header {
 main {
   margin-top: 100px;
   background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%); }
+  main .about .custom-container {
+    max-width: 720px;
+    margin: 0 auto; }
+  main .content {
+    margin-top: 150px; }
+    main .content .new-news-item {
+      box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31);
+      border-radius: 8px;
+      background-color: #FFFFFF; }
+      main .content .new-news-item h3 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 1.42rem;
+        color: #363739; }
+      main .content .new-news-item .new-news-bottom {
+        border-top: 1px solid #EBEBEB;
+        height: 46px; }
+        main .content .new-news-item .new-news-bottom .new-news-author {
+          font-size: 0.8rem;
+          color: #363739; }
+        main .content .new-news-item .new-news-bottom .new-news-comment {
+          color: #AFAFAF;
+          font-size: 0.8rem; }
+          main .content .new-news-item .new-news-bottom .new-news-comment span {
+            color: #E2322B; }
+      main .content .new-news-item .comment-in-pic {
+        position: absolute;
+        bottom: -10px; }
+        main .content .new-news-item .comment-in-pic .comment {
+          margin-right: auto; }
+    main .content .single-news-content-title {
+      font-size: 2.64rem;
+      position: relative;
+      font-family: "Adelle-Bold", sans-serif;
+      font-weight: 600; }
+      main .content .single-news-content-title:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 57px;
+        border-bottom: 3px solid #E2322B;
+        padding-top: 20px;
+        position: absolute;
+        bottom: -20px;
+        left: 0%; }
+    main .content h4 {
+      position: relative;
+      font-family: "Adelle-Bold", sans-serif;
+      font-weight: 600; }
+      main .content h4:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+        border-bottom: 3px solid #E2322B;
+        padding-top: 20px;
+        position: absolute;
+        bottom: -20px;
+        left: 0%; }
+    main .content .show-more {
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 600;
+      font-size: 1.14rem;
+      color: #E2322B; }
+    main .content button {
+      font-size: 1rem;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-weight: 600;
+      color: #FFFFFF;
+      border-radius: 3px;
+      box-shadow: none !important;
+      border: none !important; }
+    main .content .content-comment article {
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+      main .content .content-comment article p {
+        font-size: 0.8rem; }
+      main .content .content-comment article .time {
+        color: #AFAFAF;
+        font-size: 0.7rem; }
   main .main-news {
     margin-top: 150px; }
     main .main-news .news-detail h2 {
@@ -382,7 +462,7 @@ main {
       font-family: "ProximaNova-Bold", sans-serif;
       font-weight: 600; }
       main .comments .comment-detail h5:before {
-        content: ' ΓÇ¥ ';
+        content: ' ” ';
         color: #93DC32;
         font-size: 50px;
         position: absolute;
@@ -394,6 +474,19 @@ main {
       padding-right: 7px;
       font-family: "ProximaNova-Regular", sens-serif;
       font-size: 0.8rem; }
+  main .new-news-kategorije {
+    margin-top: 150px !important; }
+  main .new-news .kategorije-title {
+    font-size: 2.64rem;
+    font-family: "Adelle-Bold", sans-serif;
+    font-weight: 600; }
+    main .new-news .kategorije-title:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 57px;
+      border-bottom: 3px solid #E2322B;
+      padding-top: 20px; }
   main .new-news h2 {
     font-size: 2.64rem;
     position: relative;
