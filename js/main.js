@@ -1,5 +1,42 @@
 $(document).ready(function () {
     
+     function animateHeader() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > 50) {
+            $('header').addClass('header-active py-0 py-lg-0').removeClass('py-2 py-lg-4');
+        } else {
+            $('header').removeClass('header-active py-0 py-lg-0').addClass('py-2 py-lg-4');
+        }
+    }
+    
+    
+    //animation 
+    function animation() {
+
+        var windowHeight = $(window).height();
+        var scrollDown = $(window).scrollTop();
+
+        $('.animation').each(function () {
+            var position = $(this).offset().top;
+
+            if (position < scrollDown + windowHeight - 50) {
+                var animacija = $(this).attr('data-animation');
+                var delay = $(this).attr('data-delay');
+                $(this).css('animation-delay', delay);
+                $(this).addClass(animacija);
+                
+            }
+        });
+    }
+
+    animateHeader();
+    animation();
+
+    $(window).scroll(function () {
+        animateHeader();
+        animation();
+    });
+    
     
     
     //FILL ELEMENTS DEPENDS OF CATEGORY
@@ -45,6 +82,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         animation();
     });
+    
     
     
     

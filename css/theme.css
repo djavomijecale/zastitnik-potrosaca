@@ -310,7 +310,7 @@ body {
   color: #d9534f; }
 
 header {
-  height: 100px; }
+  transition: 0.5s linear; }
   header .navbar {
     border-bottom: 1px solid #EBEBEB; }
     header .navbar .navbar-brand {
@@ -334,11 +334,16 @@ header {
     header .navbar .btn-danger {
       font-size: 0.7rem; }
 
+.header-active {
+  background: white; }
+
 main {
   margin-top: 100px;
   background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%); }
-  main .main-news .news-detail h2 {
-    max-height: 92px; }
+  main .main-news {
+    margin-top: 150px; }
+    main .main-news .news-detail h2 {
+      max-height: 92px; }
   main .news-aside {
     box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31);
     background-color: #FFFFFF; }
@@ -377,7 +382,7 @@ main {
       font-family: "ProximaNova-Bold", sans-serif;
       font-weight: 600; }
       main .comments .comment-detail h5:before {
-        content: ' ” ';
+        content: ' ΓÇ¥ ';
         color: #93DC32;
         font-size: 50px;
         position: absolute;
