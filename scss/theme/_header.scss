@@ -1,4 +1,87 @@
 header{
+    
+    
+    
+    .animated-icon1, .animated-icon2, .animated-icon3 {
+
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon1 span {
+background: $danger;
+}
+
+.animated-icon2 span {
+background: $danger;
+}
+
+.animated-icon3 span {
+background: $danger;
+}
+
+.animated-icon1 span:nth-child(1) {
+top: -1px;
+}
+
+.animated-icon1 span:nth-child(2) {
+top: 9px;
+}
+
+.animated-icon1 span:nth-child(3) {
+top: 19px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+top: 9px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -10px;
+
+}
+
+.animated-icon1.open span:nth-child(3) {
+top: 9px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
        transition:0.5s linear;
        .navbar{border-bottom: 1px solid #EBEBEB;  
                .navbar-brand{
@@ -14,15 +97,34 @@ header{
                                   content: '';
                                   display: block;
                                   margin: 0 auto;
-                                  width: 70%;
+                                  width: 30%;
                                   border-bottom: 3px solid $danger;
                                   padding-top: 20px;
                                   position: absolute;
                                   bottom: -3px;
-                                  left: 15%;} }}
+                                  left: 0%;} }}
        .btn-danger{font-size:0.7rem; }
 
        }}
 .header-active{
     background: white;}
+
+
+  @media(min-width:992px){header{.navbar{.navbar-nav {
+                   .nav-link{font-size: 1.2rem !important;
+                              padding: 10px;
+                              position: relative;
+                              color: $primary;
+                              font-family: $font-proximaNova-regular;
+                              &.active:after,&:hover:after{
+                                  content: '';
+                                  display: block;
+                                  margin: 0 auto;
+                                  width: 70%;
+                                  border-bottom: 3px solid $danger;
+                                  padding-top: 20px;
+                                  position: absolute;
+                                  bottom: -3px;
+                                  left: 15%;} }}}}}
+
 
