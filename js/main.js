@@ -94,6 +94,95 @@ $(document).ready(function () {
         animation();
     });
     
+ jQuery.validator.addMethod("ContainsAtLeastOneDigit", function (value) {
+                    return /^[a-z]+[0-9]/i.test(value);
+                });
+
+                $(function () {
+                    $(".contact-form").validate({
+                        highlight: function (element) {
+                            $(element).closest('.form-group').addClass("has-danger");
+                            $(element).addClass("form-control-danger");
+                        },
+                        unhighlight: function (element) {
+                            $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                            $(element).removeClass('form-control-danger').addClass('form-control-success');
+                        },
+                        rules: {
+                            name: {
+                                required: true,
+                                rangelength: [2, 20]
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                            password: {
+                                required: true,
+                                minlength: 6,
+                                ContainsAtLeastOneDigit:true
+                            },
+                            repassword: {
+                                required: true,
+                                minlength: 6,
+                                equalTo: "#password"
+                            },
+                            message: {
+                                required: true,
+                                maxlength: 255
+                            },
+                            exampleRadios: {
+                                required: true
+                            },
+                            odgovor: {
+                                required: true
+                            }
+
+
+
+
+                        },
+                        messages: {
+                            name: {
+                                required: 'Polje Ime je obavezno',
+                                rangelength: 'Ime mora biti izmedju 2 i 20 karaktera'
+
+                            },
+                            email: {
+                                required: 'Email je obavezno polje',
+                                email: 'Molimo unesite validan Email'
+                            },
+                            password: {
+                                required: 'Polje je obavezno',
+                                minlength: 'Minimalno mora imati 6 karaktera',
+                                ContainsAtLeastOneDigit:'Mora imati bar jedan broj'
+                            },
+                            repassword: {
+                                required: 'Polje je obavezno',
+                                minlength: 'Minimalno mora imati 6 karaktera',
+                                equalTo: "Paswordi se ne poklapaju"
+                            },
+                            message: {
+                                required: 'Polje je obavezno',
+                                maxlength: 'Polje ne sme biti duze od 255 karaktera'
+                            },
+                            exampleRadios: {
+                                required: 'Polje je obavezno'
+                            },
+                            odgovor: {
+                                required: 'Polje je obavezno'
+                            }
+
+                        },
+                        errorElement: 'p',
+                        errorPlacement: function (error, element) {
+                            error.appendTo($(element).closest('.form-group').find('.error-msg'));
+                        }
+
+                    });
+                });
+            });
+            //Form Validation
 
     
     
@@ -105,6 +194,6 @@ $(document).ready(function () {
 
 
 
-});//end document.ready
+//end document.ready
 
 
