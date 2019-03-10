@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin-ext");
 @font-face {
   font-family: "Adelle-Bold";
@@ -414,6 +413,14 @@ header {
 main {
   margin-top: 100px;
   background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%); }
+  main .about form button {
+    font-size: 1rem;
+    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: none !important;
+    border: none !important; }
   main .about .custom-container {
     max-width: 720px;
     margin: 0 auto; }
@@ -536,13 +543,13 @@ main {
       font-family: "ProximaNova-Bold", sans-serif;
       font-weight: 600; }
       main .comments .comment-detail h5:before {
-        content: ' ΓÇ¥ ';
+        content: '"';
         color: #93DC32;
         font-size: 50px;
         position: absolute;
         left: 5px;
         top: 1px;
-        font-family: "Adelle-Bold", sans-serif; }
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
     main .comments .comment-detail p {
       padding-left: 7px;
       padding-right: 7px;

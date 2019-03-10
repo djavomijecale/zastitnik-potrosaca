@@ -1,206 +1,215 @@
 main{margin-top: 100px;
      background:  radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
-     .about{.custom-container{max-width: 720px;
-           margin: 0 auto;}}
-    
+
+     .about{form{
+                button{font-size:1rem;
+                       font-family: $font-proximaNova-bold;
+                       font-weight: 600;
+                       color:#FFFFFF;
+                       border-radius: 3px;
+                       box-shadow: none !important;
+                       border: none !important;}}
+            .custom-container{max-width: 720px;
+                              margin: 0 auto;}}
+
      .content{margin-top: 150px;
               .new-news-item{
-                         h3{
-                             font-family: $font-ubuntu;
-                             font-size: 1.42rem;
-                             color: $primary;
-                             
-                         }
-                         box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                         border-radius: 8px;
-                         background-color: #FFFFFF;
-                         .new-news-bottom{border-top: 1px solid #EBEBEB;
-                                          height:46px;
-                                          
-                                          .new-news-author{
-                                              font-size: 0.8rem;
-                                              color: #363739;
-                                              
-                                          }
-                                          .new-news-comment{color: #AFAFAF;
-                                                            font-size: 0.8rem;
-                                                            span{color: $danger;}}}
-                                                            .comment-in-pic{
-                                                                position: absolute;
-                                                                bottom: -10px;
-                                                                .comment{margin-right: auto}
-                                                            }}
-     .single-news-content-title{font-size:2.64rem;
-                        position: relative;
-                        font-family:$font-addele-bold;
-                        font-weight:600; &:after{
-                            content: '';
-                            display: block;
-                            margin: 0 auto;
-                            width: 57px;
-                            border-bottom: 3px solid $danger;
-                            padding-top: 20px;
-                            position: absolute;
-                            bottom: -20px;
-                            left: 0%;
-                        } }
-      h4{
-                        position: relative;
-                        font-family:$font-addele-bold;
-                        font-weight:600; &:after{
-                            content: '';
-                            display: block;
-                            margin: 0 auto;
-                            width: 30%;
-                            border-bottom: 3px solid $danger;
-                            padding-top: 20px;
-                            position: absolute;
-                            bottom: -20px;
-                            left: 0%;
-                        }   }
-                     .show-more{font-family: $font-proximaNova-bold;
-                                font-weight: 600;
-                                font-size: 1.14rem;
-                                color: $danger;
-                     }
-      button{font-size:1rem;
-                                    font-family: $font-proximaNova-bold;
-                                    font-weight: 600;
-                                    color:#FFFFFF;
-                             	border-radius: 3px;
-                             box-shadow: none !important;
-                             border: none !important;}
-                         .content-comment{
-                             article{border-radius: 8px;	
-                                                  background-color: #FFFFFF;	
-                                                  box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                             p{font-size: 0.8rem;}
-                             .time{color: #AFAFAF;
-                             font-size:0.7rem }}}}
-     .main-news{margin-top:150px;
-         .news-detail{h2{max-height: 85px}}}
-     .news-aside{box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                 background-color: #FFFFFF;
-                 h2{padding-left:10px;&:after{
-                        content: '';
-                        display: block;
-                        margin-left:  0px ;
-                        width: 15%;
-                        border-bottom: 3px solid $danger;
-                        padding-top: 10px;} }
-                 p{padding-top: 10px}} 
-                 .comments{
-                     .comment-detail{position: relative;
-                                     background-color: #FFFFFF;
-                                     border-radius: 3px;
-                                     box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                                     &:after{position: absolute;
-                                             width: 20px;
-                                             height: 20px;
-                                             border:2px solid #fff;
-                                             content: '';
-                                             top:100%;
-                                             left:80%;
-                                             transform: rotate(45deg);
-                                             margin-top:-10px;
-                                             background-color: #FFFFFF; }
-                                     h5{padding-left:40px;
-                                        padding-top: 10px;
-                                        font-size:1.14rem;
-                                        color:$primary;
-                                        font-family:$font-proximaNova-bold;
-                                        font-weight: 600;
-                                        &:before {content:' ” ';
-                                                  color: #93DC32;
-                                                  font-size: 50px;
-                                                  position: absolute;
-                                                  left: 5px;
-                                                  top: 1px;
-                                                  font-family:$font-addele-bold;}
-                                     }
-                                     p{padding-left: 7px;
-                                       padding-right: 7px;
-                                       font-family: $font-proximaNova-regular;
+                  h3{
+                      font-family: $font-ubuntu;
+                      font-size: 1.42rem;
+                      color: $primary;
+
+                  }
+                  box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                  border-radius: 8px;
+                  background-color: #FFFFFF;
+                  .new-news-bottom{border-top: 1px solid #EBEBEB;
+                                   height:46px;
+
+                                   .new-news-author{
                                        font-size: 0.8rem;
-                                     }}
+                                       color: #363739;
 
-                 }
-                 .new-news-kategorije{margin-top: 150px !important;}
-                 .new-news{
-                     .kategorije-title{
-                         font-size:2.64rem;
-                        
-                        font-family:$font-addele-bold;
-                        font-weight:600; &:after{
-                            content: '';
-                            display: block;
-                            margin: 0 auto;
-                            width: 57px;
-                            border-bottom: 3px solid $danger;
-                            padding-top: 20px;
-                            }}
-                     h2{font-size:2.64rem;
-                        position: relative;
-                        font-family:$font-addele-bold;
-                        font-weight:600; &:after{
-                            content: '';
-                            display: block;
-                            margin: 0 auto;
-                            width: 30%;
-                            border-bottom: 3px solid $danger;
-                            padding-top: 20px;
-                            position: absolute;
-                            bottom: -20px;
-                            left: 0%;
-                        }   }
-                     .show-more{font-family: $font-proximaNova-bold;
-                                font-weight: 600;
-                                font-size: 1.14rem;
-                                color: $danger;
-                     }
-                     .new-news-item{
-                         h3{
-                             font-family: $font-ubuntu;
-                             font-size: 1.42rem;
-                             color: $primary;
-                             
-                         }
-                         box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                         border-radius: 8px;
-                         background-color: #FFFFFF;
-                         .new-news-bottom{border-top: 1px solid #EBEBEB;
-                                          height:46px;
-                                          
-                                          .new-news-author{
-                                              font-size: 0.8rem;
-                                              color: #363739;
-                                              
-                                          }
-                                          .new-news-comment{color: #AFAFAF;
-                                                            font-size: 0.8rem;
-                                                            span{color: $danger;}}}
-                                                            .comment-in-pic{
-                                                                position: absolute;
-                                                                bottom: -10px;
-                                                                .comment{margin-right: auto}
-                                                            }}}
+                                   }
+                                   .new-news-comment{color: #AFAFAF;
+                                                     font-size: 0.8rem;
+                                                     span{color: $danger;}}}
+                                                     .comment-in-pic{
+                                                         position: absolute;
+                                                         bottom: -10px;
+                                                         .comment{margin-right: auto}
+                                                     }}
+                                   .single-news-content-title{font-size:2.64rem;
+                                                              position: relative;
+                                                              font-family:$font-addele-bold;
+                                                              font-weight:600; &:after{
+                                                                  content: '';
+                                                                  display: block;
+                                                                  margin: 0 auto;
+                                                                  width: 57px;
+                                                                  border-bottom: 3px solid $danger;
+                                                                  padding-top: 20px;
+                                                                  position: absolute;
+                                                                  bottom: -20px;
+                                                                  left: 0%;
+                                                              } }
+                                   h4{
+                                       position: relative;
+                                       font-family:$font-addele-bold;
+                                       font-weight:600; &:after{
+                                           content: '';
+                                           display: block;
+                                           margin: 0 auto;
+                                           width: 30%;
+                                           border-bottom: 3px solid $danger;
+                                           padding-top: 20px;
+                                           position: absolute;
+                                           bottom: -20px;
+                                           left: 0%;
+                                       }   }
+                                   .show-more{font-family: $font-proximaNova-bold;
+                                              font-weight: 600;
+                                              font-size: 1.14rem;
+                                              color: $danger;
+                                   }
+                                   button{font-size:1rem;
+                                          font-family: $font-proximaNova-bold;
+                                          font-weight: 600;
+                                          color:#FFFFFF;
+                                          border-radius: 3px;
+                                          box-shadow: none !important;
+                                          border: none !important;}
+                                   .content-comment{
+                                       article{border-radius: 8px;	
+                                               background-color: #FFFFFF;	
+                                               box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                               p{font-size: 0.8rem;}
+                                               .time{color: #AFAFAF;
+                                                     font-size:0.7rem }}}}
+                  .main-news{margin-top:150px;
+                             .news-detail{h2{max-height: 85px}}}
+                             .news-aside{box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                         background-color: #FFFFFF;
+                                         h2{padding-left:10px;&:after{
+                                                content: '';
+                                                display: block;
+                                                margin-left:  0px ;
+                                                width: 15%;
+                                                border-bottom: 3px solid $danger;
+                                                padding-top: 10px;} }
+                                         p{padding-top: 10px}} 
+                                         .comments{
+                                             .comment-detail{position: relative;
+                                                             background-color: #FFFFFF;
+                                                             border-radius: 3px;
+                                                             box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                                             &:after{position: absolute;
+                                                                     width: 20px;
+                                                                     height: 20px;
+                                                                     border:2px solid #fff;
+                                                                     content: '';
+                                                                     top:100%;
+                                                                     left:80%;
+                                                                     transform: rotate(45deg);
+                                                                     margin-top:-10px;
+                                                                     background-color: #FFFFFF; }
+                                                             h5{padding-left:40px;
+                                                                padding-top: 10px;
+                                                                font-size:1.14rem;
+                                                                color:$primary;
+                                                                font-family:$font-proximaNova-bold;
+                                                                font-weight: 600;
+                                                                &:before {content:'"';
+                                                                          color: #93DC32;
+                                                                          font-size: 50px;
+                                                                          position: absolute;
+                                                                          left: 5px;
+                                                                          top: 1px;
+                                                                          font-family:$font-family-monospace;}
+                                                             }
+                                                             p{padding-left: 7px;
+                                                               padding-right: 7px;
+                                                               font-family: $font-proximaNova-regular;
+                                                               font-size: 0.8rem;
+                                                             }}
 
-                         .sign-in{
-                            
+                                         }
+                                         .new-news-kategorije{margin-top: 150px !important;}
+                                         .new-news{
+                                             .kategorije-title{
+                                                 font-size:2.64rem;
 
-                             background-color: #EAEAEA;
-                             box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-                             h3{font-size: 1.92rem;
-                                font-family: $font-addele-bold;
-                                font-weight: 600;
+                                                 font-family:$font-addele-bold;
+                                                 font-weight:600; &:after{
+                                                     content: '';
+                                                     display: block;
+                                                     margin: 0 auto;
+                                                     width: 57px;
+                                                     border-bottom: 3px solid $danger;
+                                                     padding-top: 20px;
+                                                 }}
+                                             h2{font-size:2.64rem;
+                                                position: relative;
+                                                font-family:$font-addele-bold;
+                                                font-weight:600; &:after{
+                                                    content: '';
+                                                    display: block;
+                                                    margin: 0 auto;
+                                                    width: 30%;
+                                                    border-bottom: 3px solid $danger;
+                                                    padding-top: 20px;
+                                                    position: absolute;
+                                                    bottom: -20px;
+                                                    left: 0%;
+                                                }   }
+                                             .show-more{font-family: $font-proximaNova-bold;
+                                                        font-weight: 600;
+                                                        font-size: 1.14rem;
+                                                        color: $danger;
+                                             }
+                                             .new-news-item{
+                                                 h3{
+                                                     font-family: $font-ubuntu;
+                                                     font-size: 1.42rem;
+                                                     color: $primary;
 
-                             }
-                             button{font-size:1.1rem;
-                                    font-family: $font-proximaNova-bold;
-                                    font-weight: 600;
-                                    color:#FFFFFF;
-                             	border-radius: 3px;
-                             box-shadow: none !important;
-                             border: none !important;}}
-                        }
+                                                 }
+                                                 box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                                 border-radius: 8px;
+                                                 background-color: #FFFFFF;
+                                                 .new-news-bottom{border-top: 1px solid #EBEBEB;
+                                                                  height:46px;
+
+                                                                  .new-news-author{
+                                                                      font-size: 0.8rem;
+                                                                      color: #363739;
+
+                                                                  }
+                                                                  .new-news-comment{color: #AFAFAF;
+                                                                                    font-size: 0.8rem;
+                                                                                    span{color: $danger;}}}
+                                                                                    .comment-in-pic{
+                                                                                        position: absolute;
+                                                                                        bottom: -10px;
+                                                                                        .comment{margin-right: auto}
+                                                                                    }}}
+
+                                                 .sign-in{
+
+
+                                                     background-color: #EAEAEA;
+                                                     box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+                                                     h3{font-size: 1.92rem;
+                                                        font-family: $font-addele-bold;
+                                                        font-weight: 600;
+
+                                                     }
+                                                     button{font-size:1.1rem;
+                                                            font-family: $font-proximaNova-bold;
+                                                            font-weight: 600;
+                                                            color:#FFFFFF;
+                                                            border-radius: 3px;
+                                                            box-shadow: none !important;
+                                                            border: none !important;}}
+                                             }
 
